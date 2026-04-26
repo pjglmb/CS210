@@ -1,24 +1,24 @@
 # CS 210 Project Portfolio
 
-## Selected Project: Grocery Tracker
+## Selected Project: Chada Tech Clock
 
 ## Project Summary
-For my CS 210 portfolio, I selected my Grocery Tracker project. This program was created for Corner Grocer to track how often grocery items appear in an input file. The program allows the user to search for a specific item, print all item frequencies, and display a histogram using asterisks. It also creates a backup file with the item frequency data.
+For my CS 210 portfolio, I selected my Chada Tech Clock project. This program displays both a 12-hour clock and a 24-hour clock at the same time. The user enters a starting time, then uses a menu to add one hour, one minute, or one second. Both clocks update together from the same internal 24-hour time.
 
 ## What I Did Well
-I think I did well with organizing the program into separate functions. I also made the search case-insensitive, so items like “Apples” and “apples” are counted together. I handled blank spaces and empty lines so the program reads the input more cleanly.
+I did well organizing the program into separate functions. Each function has a specific job, such as formatting the 12-hour time, formatting the 24-hour time, displaying the clocks, showing the menu, and updating the time.
 
 ## Improvements
-One way I could improve the program is by adding more detailed error messages if the input file cannot be opened. I could also add an option to sort the histogram by highest frequency instead of alphabetical order. These improvements would make the program easier to use and more helpful.
+One improvement I could make is adding stronger input validation for the starting hour, minute, second, and menu choices. This would help prevent invalid input and make the program more secure and user-friendly.
 
 ## Challenges
-The most challenging part was making sure the item counts were accurate while also allowing different capitalizations of the same item to be counted together. I overcame this by converting item names to lowercase keys while still keeping the original display name.
+The most challenging part was making sure the time updated correctly when seconds, minutes, or hours reached their limits. For example, when seconds reach 60, they need to reset to 0 and increase the minutes. I handled this by using conditionals to check when each value needed to roll over.
 
 ## Tools and Resources
-I used the course materials, C++ examples, and testing in my development environment to complete this project. I also practiced using file input, maps, strings, loops, and functions.
+I used course materials, C++ examples, and testing in my development environment to complete this project. I practiced using functions, loops, conditionals, references, and formatted output.
 
 ## Transferable Skills
-The skills from this project that I can use in future work include file handling, input validation, organizing code into functions, and using data structures to store information. These skills will help me build programs that are easier to test and maintain.
+This project helped me improve my problem-solving skills and my ability to break a program into smaller parts. These skills will be useful in future projects because larger programs are easier to manage when they are organized into functions.
 
 ## Code Quality
-I made the program maintainable, readable, and adaptable by using clear function names, separating the menu from the frequency-counting logic, and adding comments where needed. The code can be updated more easily because each function has a specific purpose.
+I made the program readable and maintainable by using clear function names, comments, and organized sections. The program is also adaptable because the display logic and time update logic are separated into different functions.
